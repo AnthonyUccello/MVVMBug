@@ -43,6 +43,11 @@ namespace MvvmCrossBugs.Droid.Fragments
             var set = this.CreateBindingSet<SecondViewFragment_, SecondViewModel>();
             set.Bind(_textView3).For(v => v.Text).To(vm => vm.ValueLabel);
 
+            // Comment out these 2 lines to see XML-only binding behaviour and that the getter is not called for TitleLabel
+            // Code binding works fine
+            var textView = _view.FindViewById<TextView>(Resource.Id.MyId4);
+            set.Bind(textView).For(v => v.Text).To(vm => vm.TitleLabel);
+
             set.Apply();
 
         }
