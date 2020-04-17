@@ -1,0 +1,6 @@
+﻿
+
+namespace MvvmCrossBugs.Droid.Views
+{
+    
+}

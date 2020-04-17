@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCrossBugs", "MvvmCrossBugs\MvvmCrossBugs.csproj", "{189B9CCB-B0E8-4CA1-AC90-9DE32FCD8D7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvmCrossBugs.Droid", "MvvmCrossBugs.Droid\MvvmCrossBugs.Droid.csproj", "{36A4C4E5-EBB4-49E3-AAD4-8D98BED36F01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{189B9CCB-B0E8-4CA1-AC90-9DE32FCD8D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{189B9CCB-B0E8-4CA1-AC90-9DE32FCD8D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{189B9CCB-B0E8-4CA1-AC90-9DE32FCD8D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{189B9CCB-B0E8-4CA1-AC90-9DE32FCD8D7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A4C4E5-EBB4-49E3-AAD4-8D98BED36F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A4C4E5-EBB4-49E3-AAD4-8D98BED36F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A4C4E5-EBB4-49E3-AAD4-8D98BED36F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A4C4E5-EBB4-49E3-AAD4-8D98BED36F01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
