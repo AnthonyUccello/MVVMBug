@@ -69,6 +69,7 @@
     <Compile Include="Activities\DashboardActivity.cs" />
     <Compile Include="Fragments\DashboardViewFragment.cs" />
     <Compile Include="Fragments\SecondViewFragment.cs" />
+    <Compile Include="Fragments\ThirdViewFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -116,6 +117,14 @@
       <Generator></Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SecondViewLayout.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\name.axml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ThirdViewLayout.axml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>

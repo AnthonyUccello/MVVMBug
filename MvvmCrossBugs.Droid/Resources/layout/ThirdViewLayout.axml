@@ -1,0 +1,24 @@
+﻿<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:fillViewport="true"
+	android:background="@android:color/white">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<!--Standard local:MvxBind IS NOT WORKING-->
+		<TextView
+			android:id="@+id/MyId1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:gravity="center"
+            android:text="Bye"
+			android:layout_gravity="center_horizontal"
+			android:background="@android:color/holo_red_dark"/>
+</LinearLayout>
+</ScrollView>
