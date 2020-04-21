@@ -5,12 +5,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/background_color">
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1.0"
-        android:id="@+id/frameLayout1">
         <mvvmcross.platforms.android.binding.views.MvxListView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -26,5 +20,4 @@
             local:MvxBind="ItemsSource Modes; SelectedItem SelectedMode; ItemClick SelectCommand"
             local:MvxItemTemplate="@layout/itemtemplate"
             android:paddingTop="20dp" />
-    </LinearLayout>
 </LinearLayout>
