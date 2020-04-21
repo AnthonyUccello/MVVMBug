@@ -11,51 +11,6 @@
 		android:layout_width="fill_parent"
 		android:layout_height="fill_parent">
 
-		<!--Standard local:MvxBind IS NOT WORKING-->
-		<TextView
-			android:id="@+id/MyId1"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="25dp"
-			android:gravity="center"
-			local:MvxBind="Text TitleLabel"
-			android:layout_gravity="center_horizontal"
-			android:textAllCaps="true"
-			android:background="@android:color/holo_red_dark"/>
-
-		<!--Hardcoded is working fine-->
-		<TextView
-			android:id="@+id/MyId2"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="45dp"
-			android:gravity="center"
-			android:text="Hello hello"
-			android:layout_gravity="center_horizontal"
-			android:textAllCaps="true" />
-
-		<!--When this is bound in the  SecondViewFragment.cs with fluent it works fine-->
-		<TextView
-			android:id="@+id/MyId3"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="55dp"
-			android:gravity="center"
-			android:layout_gravity="center_horizontal"
-			android:textAllCaps="true"
-			android:background="@android:color/holo_orange_dark"/>
-
-		<!--When this is bound in the  SecondViewFragment.cs with local bind code it works fine-->
-		<TextView
-			android:id="@+id/MyId4"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="55dp"
-			android:gravity="center"
-			android:layout_gravity="center_horizontal"
-			android:textAllCaps="true"
-			android:background="@android:color/holo_orange_dark"/>
-
 		<mvvmcross.platforms.android.binding.views.MvxListView
 			android:layout_width="fill_parent"
 			android:layout_height="fill_parent"
