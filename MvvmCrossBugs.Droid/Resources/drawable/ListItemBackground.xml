@@ -8,5 +8,5 @@
         android:drawable="@drawable/ListItemBackgroundPressed" />
     <item android:state_focused="false" 
         android:drawable="@drawable/ListItemBackgroundNormal" />
-    <item android:drawable="@drawable/ListItemBackgroundPressed" />
+    <item android:drawable="@drawable/ListItemBackgroundNormal" />
 </selector>
