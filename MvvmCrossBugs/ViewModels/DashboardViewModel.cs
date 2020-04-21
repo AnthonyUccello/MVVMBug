@@ -1,31 +1,45 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using MvvmCross.Commands;
-using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
 
 namespace MvvmCrossBugs.ViewModels
 {
     public class DashboardViewModel : MvxViewModel
     {
-        private IMvxNavigationService _navigationService;
+        private string _selectedmode;
+        private List<string> _modes;
 
-        public string MyProperty { get; set; }
-
-        public string ButtonText { get; set; }
-
-        public IMvxAsyncCommand OpenNewFragment { get; }
-
-        public DashboardViewModel(IMvxNavigationService navigationService)
+        public List<string> Modes
         {
-            _navigationService = navigationService;
-            MyProperty = "This is dashboard viewmodel property";
-            ButtonText = "GO TO";
-            OpenNewFragment = new MvxAsyncCommand(ExecuteOpenNewFragmentAsync);
+            get { return _modes; }
+            set
+            {
+                _modes = value;
+                RaisePropertyChanged(() => Modes);
+            }
         }
 
-        private async Task ExecuteOpenNewFragmentAsync()
+        public string SelectedMode
         {
-            await _navigationService.Navigate<SecondViewModel>();
+            get { return _selectedmode; }
+            set
+            {
+                _selectedmode = value;
+                RaisePropertyChanged(() => SelectedMode);
+            }
+        }
+
+        public IMvxCommand<string> SelectCommand { get; }
+
+        public DashboardViewModel()
+        {
+            Modes = new List<string> { "Item 1", "Item 2" };
+            SelectCommand = new MvxCommand<string>(ExecuteSelectCommand);
+        }
+
+        private void ExecuteSelectCommand(string args)
+        {
+            SelectedMode = args;
         }
     }
 }

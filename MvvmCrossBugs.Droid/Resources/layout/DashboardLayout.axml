@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:local="http://schemas.android.com/apk/res-auto"
-	android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-	android:orientation="vertical">
-	<LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="50dp"
-		android:paddingStart="16dp"
-		android:paddingEnd="16dp"
-		android:background="@android:color/holo_green_dark"
-		android:gravity="center">
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:gravity="center"
-			android:drawablePadding="4dp"
-			android:textSize="14sp"
-			android:textColor="@android:color/white"
-			local:MvxBind="Text MyProperty"/>
-
-	</LinearLayout>
-    
-		<Button
-			android:id="@+id/dashboardViewAllButton"
-			android:layout_width="140dp"
-			android:layout_height="35dp"
-			android:layout_marginTop="0.0dp"
-			android:textAlignment="center"
-			android:textAllCaps="true"
-			android:textStyle="bold"
-			android:textSize="18dp"
-			android:layout_gravity="center_horizontal"
-			android:background="@android:color/holo_red_dark"
-			android:textColor="@android:color/white"
-			local:MvxBind="Text ButtonText; Click OpenNewFragment;"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color">
+    <TextView
+        android:id="@+id/drugsOnTheGoLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="List View"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:id="@+id/frameLayout1">
+        <mvvmcross.platforms.android.binding.views.MvxListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawSelectorOnTop="false"
+            android:id="@+id/listView1"
+            android:scrollbarStyle="outsideOverlay"
+            android:choiceMode="singleChoice"
+            android:cacheColorHint="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="15dp"
+            android:listSelector="@android:color/transparent"
+            local:MvxBind="ItemsSource Modes; SelectedItem SelectedMode; ItemClick SelectCommand"
+            local:MvxItemTemplate="@layout/itemtemplate"
+            android:paddingTop="20dp" />
+    </LinearLayout>
 </LinearLayout>

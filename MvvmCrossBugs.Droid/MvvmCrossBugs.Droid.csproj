@@ -68,8 +68,6 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Activities\DashboardActivity.cs" />
     <Compile Include="Fragments\DashboardViewFragment.cs" />
-    <Compile Include="Fragments\SecondViewFragment.cs" />
-    <Compile Include="Fragments\ThirdViewFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -116,15 +114,23 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\SecondViewLayout.axml">
+    <AndroidResource Include="Resources\layout\ItemTemplate.axml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\name.axml">
+    <AndroidResource Include="Resources\drawable\ListItemBackground.xml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\ThirdViewLayout.axml">
+    <AndroidResource Include="Resources\drawable\ListItemBackgroundNormal.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ListItemBackgroundPressed.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ListItemTextColor.xml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>

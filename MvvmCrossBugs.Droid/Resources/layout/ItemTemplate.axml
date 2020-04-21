@@ -4,28 +4,23 @@
     android:duplicateParentState="true"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="100dp"
     android:layout_marginLeft="20dp"
     android:layout_marginRight="20dp"
     android:gravity="center_vertical">
-    <View
-        android:layout_width="10dp"
-        android:layout_height="wrap_content"
-        android:duplicateParentState="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="2dp" />
     <TextView
         android:id="@+id/text1"
-        android:textColor="@android:color/black"
+        android:background="@drawable/ListItemBackground"
+        android:textColor="@drawable/ListItemTextColor"
         android:textAppearance="?android:textAppearanceMedium"
         android:duplicateParentState="true"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:textColorHighlight="@android:color/holo_red_light"
-        local:MvxBind="Text FullName"
-        android:layout_gravity="left"
-        android:gravity="left"
+        android:layout_height="fill_parent"
+        android:height="50dp"
+        android:textSize="24sp"
+        android:textColorHighlight="@color/white"
+        local:MvxBind="Text ."
+        android:layout_gravity="center"
+        android:gravity="center"
         android:textAllCaps="true" />
 </LinearLayout>
