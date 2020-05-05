@@ -9,4 +9,5 @@
 	<color name="black">#FF000000</color>
 	<color name="background_color">#ffffff</color>
     <color name="highlight_color">@android:color/holo_red_dark</color>
+    <color name="highlight_color1">#660000</color>
 </resources>

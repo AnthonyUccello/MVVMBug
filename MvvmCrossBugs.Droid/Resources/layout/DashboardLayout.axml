@@ -8,13 +8,10 @@
         <mvvmcross.platforms.android.binding.views.MvxListView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:drawSelectorOnTop="false"
             android:id="@+id/listView1"
             android:scrollbarStyle="outsideOverlay"
             android:choiceMode="singleChoice"
-            android:cacheColorHint="@android:color/transparent"
             android:background="@android:color/transparent"
-            android:divider="@android:color/transparent"
             android:dividerHeight="15dp"
             android:listSelector="@android:color/transparent"
             local:MvxBind="ItemsSource Modes; SelectedItem SelectedMode; ItemClick SelectCommand"

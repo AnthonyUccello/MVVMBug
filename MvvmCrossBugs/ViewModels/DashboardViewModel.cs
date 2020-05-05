@@ -33,13 +33,13 @@ namespace MvvmCrossBugs.ViewModels
 
         public DashboardViewModel()
         {
-            Modes = new List<string> { "Item 1", "Item 2" };
+            Modes = new List<string> { "Item 1", "Item 2", "item 3", "item 4", "item 5", "item 6" };
             SelectCommand = new MvxCommand<string>(ExecuteSelectCommand);
         }
 
         private void ExecuteSelectCommand(string args)
         {
-            SelectedMode = args;
+           SelectedMode = args;
         }
     }
 }
